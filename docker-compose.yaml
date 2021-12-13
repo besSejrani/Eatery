@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  mkdocs:
+    restart: always
+    container_name: mkdocs
+    build:
+      dockerfile: Dockerfile
+      context: ./Documentation
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Documentation:/app
+
+  client:
+    build:
+      context: ./Client
+    container_name: client
+    networks:
+      - frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_DOCKER=${NEXT_PUBLIC_DEVELOPMENT_DOCKER}
+    env_file:
+      - ./Client/.env
+    volumes:
+      - ./Client:/app
+
+  # ===========================================================================================================================
+
+networks:
+  frontend:

@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: rgb(244, 245, 247);
+  position: relative;
+}
+
+#root {
+  height: calc(100% - 6rem);
+}
+
+footer {
+  margin-top: -50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background-color: rgb(230, 230, 230);
+  box-shadow: rgb(0 0 0 / 30%) 0px 0px 6px inset;
+}
+
+/* ======================================================================================================== */
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* ======================================================================================================== */
+
+.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}

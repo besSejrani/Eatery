@@ -1,0 +1,35 @@
+query GetMeals {
+  kebabs {
+    id
+    name
+    price
+    ingredients
+    publishedAt
+    image {
+      url
+      id
+    }
+  }
+  pizzas {
+    id
+    name
+    price
+    ingredients
+    publishedAt
+    image {
+      url
+      id
+    }
+  }
+  burgers {
+    id
+    name
+    price
+    ingredients
+    publishedAt
+    image {
+      url
+      id
+    }
+  }
+}

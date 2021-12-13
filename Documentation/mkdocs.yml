@@ -1,0 +1,62 @@
+site_name: Eatery
+
+theme:
+  #Language
+  language: en
+
+  # Use material styles
+  name: material
+
+  # Use custom logo and favicon
+  # logo: images/raspberry.png
+  # favicon: images/raspberry.png
+
+  # Github Icon Header
+  icon:
+    repo: fontawesome/brands/github
+
+  # Hide header
+  features:
+    - header.autohide
+
+  # Color palette
+  palette:
+    primary: black
+    secondary: blue
+
+# extra:
+#   alternate:
+#     # Switch to English
+#     - name: English
+#       link: Eatery/en/
+#       lang: en
+
+#     # Switch to French
+#     - name: Francais
+#       link: Eatery/fr/
+#       lang: fr
+
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        fr: Français
+
+# Extensions
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - def_list
+  - footnotes
+  - pymdownx.tabbed
+  - admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# Javascript
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js

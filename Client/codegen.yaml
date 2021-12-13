@@ -1,0 +1,15 @@
+overwrite: true
+schema: "${NEXT_PUBLIC_GRAPH_CMS_CONTENT_API}"
+documents: "./Graphql/**/**/*.graphql"
+# watch: true
+generates:
+  Graphql/graphql-hooks.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+      - fragment-matcher
+    config:
+      withHOC: false
+      withComponent: false
+      withHooks: true
