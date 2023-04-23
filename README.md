@@ -1,5 +1,5 @@
 <div align="center" style="margin-top:20px;">
-    <img src="./Documentation/docs/images/eatery.png" alt="Eatery Logo" width="500px" >
+    <img src="./Documentation/images/eatery.png" alt="Eatery Logo" width="500px" >
 </div>
 
 </br>
