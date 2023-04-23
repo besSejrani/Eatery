@@ -16,10 +16,10 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@Components/*": ["./Components/*"],
-      "@Apollo/*": ["./Apollo/*"],
-      "@Graphql/*": ["./Graphql/*"],
-      "@Hook/*": ["./Hook/*"]
+      "@Components/*": ["./src/Components/*"],
+      "@Apollo/*": ["./src/Apollo/*"],
+      "@Graphql/*": ["./src/Graphql/*"],
+      "@Hook/*": ["./src/Hook/*"]
     },
     "incremental": true
   },
