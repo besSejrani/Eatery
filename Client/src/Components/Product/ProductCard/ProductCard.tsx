@@ -82,19 +82,18 @@ const Product: React.FC<IProduct> = ({ product }) => {
         </div>
 
         <Box style={{ maxWidth: 280, height: "60px", wordWrap: "break-word" }}>
-          {/* <Typography variant="body2">{product?.ingredients.split("", 110).concat("...")}</Typography> */}
-          {/* <Typography variant="body2">{product?.ingredients}</Typography> */}
+          <Typography variant="body2">{product?.ingredients}</Typography>
         </Box>
       </CardContent>
 
       <CardActions className={classes.actions}>
-        <Button size="small" title="Recommend" color="secondary" variant="outlined" onClick={() => shareContent()}>
+        <Button size="small" title="Recommend" color="primary" variant="outlined" onClick={() => shareContent()}>
           Recommend
         </Button>
         <Button
           size="small"
           title="Add to cart"
-          color="secondary"
+          color="primary"
           variant="outlined"
           startIcon={<AddIcon fontSize="small" />}
         >

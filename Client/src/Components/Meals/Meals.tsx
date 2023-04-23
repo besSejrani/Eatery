@@ -16,7 +16,7 @@ import ProductCard from "@Components/Product/ProductCard/ProductCard";
 
 const Meals = ({ meals }) => {
   return (
-    <Container>
+    <Container maxWidth="xl">
       <Typography variant="h3" sx={{ color: "text.primary" }}>
         Kebab
       </Typography>

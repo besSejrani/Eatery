@@ -36,6 +36,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
           text: {
             primary: grey[900],
             secondary: grey[800],
+            header: "#ffffff",
           },
           sidebar: {
             title: "#01875F",

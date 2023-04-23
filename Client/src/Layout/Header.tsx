@@ -69,7 +69,7 @@ const Header = ({ Action, darkModeState }) => {
     <header className={classes.root}>
       <HideOnScroll>
         <AppBar position="fixed">
-          <Container>
+          <Container maxWidth="xl">
             <Toolbar disableGutters style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <Box style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <Link href="/">
@@ -91,21 +91,25 @@ const Header = ({ Action, darkModeState }) => {
                   </Box>
                 </Link>
 
-                <Link href="/meals">
-                  <Typography variant="body1" className={classes.link} sx={{ color: "text.primary" }}>
-                    Meals
-                  </Typography>
-                </Link>
-                <Link href="/menus">
-                  <Typography variant="body1" className={classes.link} sx={{ color: "text.primary" }}>
-                    Menus
-                  </Typography>
-                </Link>
-                <Link href="/contact">
-                  <Typography variant="body1" className={classes.link} sx={{ color: "text.primary" }}>
-                    Contact
-                  </Typography>
-                </Link>
+                <Box sx={{ display: { xs: "none", sx: "none", md: "block" } }}>
+                  <Box style={{ display: "flex" }}>
+                    <Link href="/meals">
+                      <Typography variant="body1" className={classes.link} sx={{ color: "text.header" }}>
+                        Meals
+                      </Typography>
+                    </Link>
+                    <Link href="/menus">
+                      <Typography variant="body1" className={classes.link} sx={{ color: "text.header" }}>
+                        Menus
+                      </Typography>
+                    </Link>
+                    <Link href="/contact">
+                      <Typography variant="body1" className={classes.link} sx={{ color: "text.header" }}>
+                        Contact
+                      </Typography>
+                    </Link>
+                  </Box>
+                </Box>
               </Box>
 
               <Box>
