@@ -21,7 +21,6 @@ const getDesignTokens = (mode: PaletteMode) => ({
             main: "#171717",
           },
           secondary: {
-            // main: '#13b061'
             main: "#ffffff",
           },
           background: {
@@ -37,6 +36,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
             primary: grey[900],
             secondary: grey[800],
             header: "#ffffff",
+            newsletter: "#ffffff",
           },
           sidebar: {
             title: "#01875F",
@@ -69,6 +69,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
           text: {
             primary: "#ffffff",
             secondary: "#ffffff",
+            newsletter: "#ffffff",
           },
 
           sidebar: {

@@ -63,7 +63,7 @@ const Footer = () => {
           <Box className={classes.footerHeader}>
             <Box>
               <Link passHref href="/" className={classes.logo}>
-                <img src="/eateryFooterLogo.svg" alt="logo" height={60} />
+                <img src="eateryFooterLogo.svg" alt="logo" height={60} />
               </Link>
             </Box>
 
@@ -112,7 +112,12 @@ const Footer = () => {
                 )}
               />
 
-              <Button type="submit" variant="contained" color="primary" className={classes.formSubmit}>
+              <Button
+                type="submit"
+                variant="contained"
+                sx={{ color: "text.newsletter" }}
+                className={classes.formSubmit}
+              >
                 Submit
               </Button>
             </form>

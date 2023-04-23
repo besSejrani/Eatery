@@ -76,7 +76,7 @@ const Product: React.FC<IProduct> = ({ product }) => {
             {product?.name}
           </Typography>
 
-          <Typography variant="h6" color="secondary" className={classes.price}>
+          <Typography variant="h6" color="secondary" className={classes.price} sx={{ color: "text.primary" }}>
             {product?.price}.-
           </Typography>
         </div>

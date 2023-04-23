@@ -176,6 +176,7 @@ const useStyles = makeStyles((theme: MyTheme) =>
       marginLeft: "15px",
       fontWeight: 500,
       textTransform: "capitalize",
+      color: "white",
     },
   }),
 );
