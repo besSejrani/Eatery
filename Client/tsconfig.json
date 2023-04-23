@@ -21,7 +21,12 @@
       "@Graphql/*": ["./src/Graphql/*"],
       "@Hook/*": ["./src/Hook/*"]
     },
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.graphql", "next.config.js"],
   "exclude": ["node_modules"]
