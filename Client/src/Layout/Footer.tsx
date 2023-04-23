@@ -63,7 +63,7 @@ const Footer = () => {
           <Box className={classes.footerHeader}>
             <Box>
               <Link passHref href="/" className={classes.logo}>
-                <img src="eateryFooterLogo.svg" alt="logo" height={60} />
+                <img src="EateryFooterLogo.svg" alt="logo" height={60} />
               </Link>
             </Box>
 
