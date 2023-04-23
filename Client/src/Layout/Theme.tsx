@@ -5,7 +5,7 @@ import { PaletteMode } from "@mui/material";
 
 // Variable font
 import localFont from "@next/font/local";
-const myInter = localFont({ src: "../app/fonts/Inter-VariableFont.ttf", preload: true });
+const myInter = localFont({ src: "../App/fonts/Inter-VariableFont.ttf", preload: true });
 
 const getDesignTokens = (mode: PaletteMode) => ({
   typography: {
