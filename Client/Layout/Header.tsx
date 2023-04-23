@@ -61,11 +61,11 @@ const Header = () => {
           <Container>
             <Toolbar disableGutters style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <Box style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <Hidden smUp>
-                  <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                    <MenuIcon />
-                  </IconButton>
-                </Hidden>
+                {/* <Hidden smUp> */}
+                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                  <MenuIcon />
+                </IconButton>
+                {/* </Hidden> */}
 
                 <Link href="/">
                   <Box
@@ -86,23 +86,23 @@ const Header = () => {
                   </Box>
                 </Link>
 
-                <Hidden smDown>
-                  <Link href="/meals">
-                    <Typography variant="body1" className={classes.link}>
-                      Meals
-                    </Typography>
-                  </Link>
-                  <Link href="/menus">
-                    <Typography variant="body1" className={classes.link}>
-                      Menus
-                    </Typography>
-                  </Link>
-                  <Link href="/contact">
-                    <Typography variant="body1" className={classes.link}>
-                      Contact
-                    </Typography>
-                  </Link>
-                </Hidden>
+                {/* <Hidden smDown> */}
+                <Link href="/meals">
+                  <Typography variant="body1" className={classes.link}>
+                    Meals
+                  </Typography>
+                </Link>
+                <Link href="/menus">
+                  <Typography variant="body1" className={classes.link}>
+                    Menus
+                  </Typography>
+                </Link>
+                <Link href="/contact">
+                  <Typography variant="body1" className={classes.link}>
+                    Contact
+                  </Typography>
+                </Link>
+                {/* </Hidden> */}
               </Box>
 
               <Box>
@@ -114,7 +114,7 @@ const Header = () => {
                   <StyledBadge
                     // badgeContent={selectProducts}
                     color="secondary"
-                    overlap="circle"
+                    overlap="circular"
                   >
                     <CartIcon className="nav-icon" />
                   </StyledBadge>

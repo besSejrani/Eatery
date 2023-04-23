@@ -32,5 +32,6 @@ if (typeof window !== "undefined" && process.env.NODE_ENV == "development") {
 export const apolloClient = new ApolloClient({
   uri,
   cache,
+  ssrMode: true,
 });
 export default withApollo(apolloClient);

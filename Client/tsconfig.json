@@ -20,7 +20,8 @@
       "@Apollo/*": ["./Apollo/*"],
       "@Graphql/*": ["./Graphql/*"],
       "@Hook/*": ["./Hook/*"]
-    }
+    },
+    "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.graphql", "next.config.js"],
   "exclude": ["node_modules"]

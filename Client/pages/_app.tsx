@@ -20,4 +20,4 @@ const App = ({ Component, pageProps }: AppProps) => {
   );
 };
 //@ts-ignore
-export default withApollo({ ssr: false })(App);
+export default withApollo({ ssr: true })(App);
