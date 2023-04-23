@@ -20,8 +20,8 @@ import { Breakpoints } from "@mui/material";
 // import useCalculateCartTotal from "@Hook/useCalculateCartTotal";
 
 // Apollo State
-import { useReactiveVar } from "@Apollo/client";
-import { ui } from "@Apollo/state/ui/index";
+import { useReactiveVar } from "@apollo/client";
+import { ui } from "../Apollo/state/ui/index";
 
 // ========================================================================================================
 

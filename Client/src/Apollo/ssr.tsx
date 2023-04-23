@@ -1,11 +1,11 @@
 // Apollo
-import { InMemoryCache, ApolloClient } from "@Apollo/client";
+import { InMemoryCache, ApolloClient } from "@apollo/client";
 
 // SSR
 import { withApollo } from "next-apollo";
 
 // State
-import { ui } from "./state/ui";
+import { ui } from "../Apollo/state/ui";
 // ========================================================================================================
 const cache = new InMemoryCache({
   typePolicies: {

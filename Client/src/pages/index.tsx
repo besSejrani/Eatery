@@ -7,7 +7,7 @@ import Meals from "@Components/Meals/Meals";
 import { useGetMealsQuery } from "@Graphql/graphql-hooks";
 
 // Apollo
-import withApollo from "@Apollo/ssr";
+import withApollo from "../Apollo/ssr";
 
 //===================================================================================
 

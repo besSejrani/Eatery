@@ -14,7 +14,7 @@ import { Theme } from "../Layout/Theme";
 import localFont from "@next/font/local";
 
 // SSR
-import withApollo from "@Apollo/ssr";
+import withApollo from "../Apollo/ssr";
 
 // Cookie
 import { getCookie, setCookies } from "cookies-next";

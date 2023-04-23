@@ -1,4 +1,4 @@
-import { makeVar } from "@Apollo/client";
+import { makeVar } from "@apollo/client";
 
 const initialState = {
   isAdmin: false,

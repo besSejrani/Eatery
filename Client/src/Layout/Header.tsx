@@ -33,8 +33,8 @@ import Language from "@Components/Menus/Language";
 import ButtonHeaderAction from "@Components/Buttons/ButtonHeaderAction";
 
 // Apollo State
-import { useReactiveVar } from "@Apollo/client";
-import { ui } from "@Apollo/state/ui/index";
+import { useReactiveVar } from "@apollo/client";
+import { ui } from "../Apollo/state/ui/index";
 
 // ========================================================================================================
 
