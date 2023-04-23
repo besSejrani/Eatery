@@ -52,28 +52,34 @@ const TabNavigation = () => {
   return (
     <HideOnScroll>
       <BottomNavigation className={classes.root} showLabels sx={{ display: { xl: "none", lg: "none", md: "none" } }}>
-        <BottomNavigationAction component={Link} href="/" label="Home" icon={<HomeIcon />} />
+        <BottomNavigationAction
+          component={Link}
+          href="/"
+          label="Home"
+          icon={<HomeIcon />}
+          style={{ width: "100%", color: "white" }}
+        />
 
         <BottomNavigationAction
           component={Link}
           href="/meals"
           icon={<FastfoodIcon />}
           label="Meals"
-          style={{ width: "100%" }}
+          style={{ width: "100%", color: "white" }}
         />
         <BottomNavigationAction
           component={Link}
           href="/menus"
           label="Menus"
           icon={<RestaurantIcon />}
-          style={{ width: "100%" }}
+          style={{ width: "100%", color: "white" }}
         />
         <BottomNavigationAction
           component={Link}
           href="/contact"
           label="Contact"
           icon={<PhoneIcon />}
-          style={{ width: "100%" }}
+          style={{ width: "100%", color: "white" }}
         />
       </BottomNavigation>
     </HideOnScroll>

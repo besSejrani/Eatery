@@ -112,7 +112,7 @@ const Header = ({ Action, darkModeState }) => {
                 </Box>
               </Box>
 
-              <Box>
+              <Box style={{ display: "flex" }}>
                 <ButtonHeaderAction action={() => Action()}>
                   {darkModeState === "dark" ? (
                     <BsSun style={{ fontSize: "18px" }} />
@@ -134,10 +134,11 @@ const Header = ({ Action, darkModeState }) => {
                     <BsBasket style={{ fontSize: "18px" }} />
                   </StyledBadge>
                 </ButtonHeaderAction>
-
-                <ButtonHeaderAction action={changeSideBar} sx={{ display: { xl: "none", lg: "none", md: "none" } }}>
-                  <BiMenu style={{ fontSize: "20px" }} />
-                </ButtonHeaderAction>
+                <Box sx={{ display: { lg: "none", md: "none", xs: "block" } }}>
+                  <ButtonHeaderAction action={changeSideBar}>
+                    <BiMenu style={{ fontSize: "20px" }} />
+                  </ButtonHeaderAction>
+                </Box>
               </Box>
             </Toolbar>
           </Container>
